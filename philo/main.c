@@ -72,7 +72,7 @@ int	check_argv(int argc, char *argv[])
 	if (is_args_digits(&argv[1]) == FALSE)
 		return (print_str_error("arguments should be numbers.\n"), FALSE);
 	if (is_args_plus(&argv[1]) == FALSE)
-		return (print_str_error("arguments should be positive numbers.\n"),
+		return (print_str_error("arguments should be non negative numbers.\n"),
 			FALSE);
 	if (is_args_overflow(&argv[1]) == TRUE)
 		return (print_str_error("arguments number overflow.\n"), FALSE);
